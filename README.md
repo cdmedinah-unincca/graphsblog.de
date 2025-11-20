@@ -14,9 +14,13 @@ Blog técnico universitario dedicado a la estructura de datos Grafos, desarrolla
 blog-grafos/
 
 ├── index.html # Página principal
+
 ├── styles/ # Estilos CSS
+
 ├── scripts/ # Lógica JavaScript
+
 ├── assets/ # Imágenes e iconos
+
 └── README.md # Documentación
 
 ## 🛠️ Tecnologías Utilizadas
