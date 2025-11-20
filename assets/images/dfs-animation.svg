@@ -1,0 +1,56 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .visited { fill: #10b981; stroke: #047857; }
+        .current { fill: #f59e0b; stroke: #d97706; }
+        .stack { fill: #8b5cf6; stroke: #7c3aed; }
+        .unvisited { fill: #9ca3af; stroke: #6b7280; }
+        .text { font-family: Arial, sans-serif; font-size: 14px; fill: white; font-weight: bold; }
+        .path { stroke: #f59e0b; stroke-width: 3; fill: none; }
+    </style>
+    
+    <!-- Título -->
+    <text x="200" y="20" text-anchor="middle" font-weight="bold">DFS: Profundizando Primero</text>
+    
+    <!-- Camino de DFS -->
+    <path d="M 200 80 L 120 150 L 80 220 L 160 220 L 240 220 L 280 150" class="path" stroke-dasharray="5,5"/>
+    
+    <!-- Nodos con estados de DFS -->
+    <circle cx="200" cy="80" r="25" class="visited"/>
+    <text x="200" y="85" text-anchor="middle" class="text">A</text>
+    
+    <circle cx="120" cy="150" r="25" class="visited"/>
+    <text x="120" y="155" text-anchor="middle" class="text">B</text>
+    
+    <circle cx="80" cy="220" r="25" class="visited"/>
+    <text x="80" y="225" text-anchor="middle" class="text">D</text>
+    
+    <circle cx="160" cy="220" r="25" class="current"/>
+    <text x="160" y="225" text-anchor="middle" class="text">E</text>
+    
+    <circle cx="240" cy="220" r="25" class="stack"/>
+    <text x="240" y="225" text-anchor="middle" class="text">F</text>
+    
+    <circle cx="280" cy="150" r="25" class="unvisited"/>
+    <text x="280" y="155" text-anchor="middle" class="text">C</text>
+    
+    <!-- Indicador de pila -->
+    <rect x="320" y="50" width="60" height="160" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="350" y="40" text-anchor="middle" font-size="12" font-weight="bold">Pila</text>
+    
+    <rect x="330" y="180" width="40" height="25" fill="#8b5cf6"/>
+    <text x="350" y="195" text-anchor="middle" class="text">F</text>
+    
+    <rect x="330" y="155" width="40" height="25" fill="#f59e0b"/>
+    <text x="350" y="170" text-anchor="middle" class="text">E</text>
+    
+    <rect x="330" y="130" width="40" height="25" fill="#10b981"/>
+    <text x="350" y="145" text-anchor="middle" class="text">C</text>
+    
+    <!-- Orden de visita -->
+    <text x="200" y="110" text-anchor="middle" font-size="10">1°</text>
+    <text x="120" y="180" text-anchor="middle" font-size="10">2°</text>
+    <text x="80" y="250" text-anchor="middle" font-size="10">3°</text>
+    <text x="160" y="250" text-anchor="middle" font-size="10">4°</text>
+    <text x="240" y="250" text-anchor="middle" font-size="10">5°</text>
+    <text x="280" y="180" text-anchor="middle" font-size="10">6°</text>
+</svg>

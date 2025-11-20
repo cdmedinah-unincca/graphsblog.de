@@ -1,0 +1,109 @@
+<svg width="450" height="350" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .cell { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 1; }
+        .header { fill: #2563eb; stroke: #1e40af; }
+        .text { font-family: Arial, sans-serif; font-size: 14px; }
+        .header-text { fill: white; font-weight: bold; }
+        .one { fill: #bbf7d0; } /* Verde para 1s */
+        .zero { fill: #fecaca; } /* Rojo para 0s */
+    </style>
+    
+    <!-- Título -->
+    <text x="225" y="30" text-anchor="middle" class="text" font-weight="bold">Matriz de Adyacencia</text>
+    
+    <!-- Encabezados de columnas -->
+    <rect x="80" y="40" width="40" height="40" class="header"/>
+    <text x="100" y="65" text-anchor="middle" class="header-text">A</text>
+    
+    <rect x="120" y="40" width="40" height="40" class="header"/>
+    <text x="140" y="65" text-anchor="middle" class="header-text">B</text>
+    
+    <rect x="160" y="40" width="40" height="40" class="header"/>
+    <text x="180" y="65" text-anchor="middle" class="header-text">C</text>
+    
+    <rect x="200" y="40" width="40" height="40" class="header"/>
+    <text x="220" y="65" text-anchor="middle" class="header-text">D</text>
+    
+    <rect x="240" y="40" width="40" height="40" class="header"/>
+    <text x="260" y="65" text-anchor="middle" class="header-text">E</text>
+    
+    <rect x="280" y="40" width="40" height="40" class="header"/>
+    <text x="300" y="65" text-anchor="middle" class="header-text">F</text>
+    
+    <!-- Filas -->
+    <rect x="40" y="80" width="40" height="40" class="header"/>
+    <text x="60" y="105" text-anchor="middle" class="header-text">A</text>
+    
+    <rect x="40" y="120" width="40" height="40" class="header"/>
+    <text x="60" y="145" text-anchor="middle" class="header-text">B</text>
+    
+    <rect x="40" y="160" width="40" height="40" class="header"/>
+    <text x="60" y="185" text-anchor="middle" class="header-text">C</text>
+    
+    <rect x="40" y="200" width="40" height="40" class="header"/>
+    <text x="60" y="225" text-anchor="middle" class="header-text">D</text>
+    
+    <rect x="40" y="240" width="40" height="40" class="header"/>
+    <text x="60" y="265" text-anchor="middle" class="header-text">E</text>
+    
+    <rect x="40" y="280" width="40" height="40" class="header"/>
+    <text x="60" y="305" text-anchor="middle" class="header-text">F</text>
+    
+    <!-- Matriz de datos -->
+    <!-- Fila A -->
+    <rect x="80" y="80" width="40" height="40" class="zero"/>
+    <text x="100" y="105" text-anchor="middle" class="text">0</text>
+    
+    <rect x="120" y="80" width="40" height="40" class="one"/>
+    <text x="140" y="105" text-anchor="middle" class="text">1</text>
+    
+    <rect x="160" y="80" width="40" height="40" class="one"/>
+    <text x="180" y="105" text-anchor="middle" class="text">1</text>
+    
+    <rect x="200" y="80" width="40" height="40" class="zero"/>
+    <text x="220" y="105" text-anchor="middle" class="text">0</text>
+    
+    <rect x="240" y="80" width="40" height="40" class="zero"/>
+    <text x="260" y="105" text-anchor="middle" class="text">0</text>
+    
+    <rect x="280" y="80" width="40" height="40" class="zero"/>
+    <text x="300" y="105" text-anchor="middle" class="text">0</text>
+    
+    <!-- Fila B -->
+    <rect x="80" y="120" width="40" height="40" class="one"/>
+    <text x="100" y="145" text-anchor="middle" class="text">1</text>
+    
+    <rect x="120" y="120" width="40" height="40" class="zero"/>
+    <text x="140" y="145" text-anchor="middle" class="text">0</text>
+    
+    <rect x="160" y="120" width="40" height="40" class="zero"/>
+    <text x="180" y="145" text-anchor="middle" class="text">0</text>
+    
+    <rect x="200" y="120" width="40" height="40" class="one"/>
+    <text x="220" y="145" text-anchor="middle" class="text">1</text>
+    
+    <rect x="240" y="120" width="40" height="40" class="one"/>
+    <text x="260" y="145" text-anchor="middle" class="text">1</text>
+    
+    <rect x="280" y="120" width="40" height="40" class="zero"/>
+    <text x="300" y="145" text-anchor="middle" class="text">0</text>
+    
+    <!-- Fila C (completar similarmente) -->
+    <rect x="80" y="160" width="40" height="40" class="one"/>
+    <text x="100" y="185" text-anchor="middle" class="text">1</text>
+    
+    <rect x="120" y="160" width="40" height="40" class="zero"/>
+    <text x="140" y="185" text-anchor="middle" class="text">0</text>
+    
+    <rect x="160" y="160" width="40" height="40" class="zero"/>
+    <text x="180" y="185" text-anchor="middle" class="text">0</text>
+    
+    <rect x="200" y="160" width="40" height="40" class="zero"/>
+    <text x="220" y="185" text-anchor="middle" class="text">0</text>
+    
+    <rect x="240" y="160" width="40" height="40" class="zero"/>
+    <text x="260" y="185" text-anchor="middle" class="text">0</text>
+    
+    <rect x="280" y="160" width="40" height="40" class="one"/>
+    <text x="300" y="185" text-anchor="middle" class="text">1</text>
+</svg>

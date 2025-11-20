@@ -1,0 +1,57 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .visited { fill: #10b981; stroke: #047857; } /* Verde para visitados */
+        .current { fill: #f59e0b; stroke: #d97706; } /* Naranja para actual */
+        .queue { fill: #3b82f6; stroke: #1e40af; }   /* Azul para en cola */
+        .unvisited { fill: #9ca3af; stroke: #6b7280; } /* Gris para no visitados */
+        .text { font-family: Arial, sans-serif; font-size: 14px; fill: white; font-weight: bold; }
+    </style>
+    
+    <!-- Título -->
+    <text x="200" y="20" text-anchor="middle" font-weight="bold">BFS: Nivel por Nivel</text>
+    
+    <!-- Nodos con estados de BFS -->
+    <circle cx="200" cy="80" r="25" class="visited"/>
+    <text x="200" y="85" text-anchor="middle" class="text">A</text>
+    <text x="200" y="110" text-anchor="middle" font-size="12">Nivel 0</text>
+    
+    <circle cx="120" cy="150" r="25" class="visited"/>
+    <text x="120" y="155" text-anchor="middle" class="text">B</text>
+    <text x="120" y="180" text-anchor="middle" font-size="12">Nivel 1</text>
+    
+    <circle cx="280" cy="150" r="25" class="visited"/>
+    <text x="280" y="155" text-anchor="middle" class="text">C</text>
+    <text x="280" y="180" text-anchor="middle" font-size="12">Nivel 1</text>
+    
+    <circle cx="80" cy="220" r="25" class="current"/>
+    <text x="80" y="225" text-anchor="middle" class="text">D</text>
+    <text x="80" y="250" text-anchor="middle" font-size="12">Nivel 2</text>
+    
+    <circle cx="160" cy="220" r="25" class="queue"/>
+    <text x="160" y="225" text-anchor="middle" class="text">E</text>
+    <text x="160" y="250" text-anchor="middle" font-size="12">Nivel 2</text>
+    
+    <circle cx="240" cy="220" r="25" class="unvisited"/>
+    <text x="240" y="225" text-anchor="middle" class="text">F</text>
+    <text x="240" y="250" text-anchor="middle" font-size="12">Nivel 2</text>
+    
+    <!-- Flechas de recorrido -->
+    <line x1="200" y1="105" x2="140" y2="135" stroke="#10b981" stroke-width="3"/>
+    <line x1="200" y1="105" x2="260" y2="135" stroke="#10b981" stroke-width="3"/>
+    <line x1="140" y1="175" x2="100" y2="205" stroke="#f59e0b" stroke-width="3"/>
+    <line x1="140" y1="175" x2="180" y2="205" stroke="#3b82f6" stroke-width="3"/>
+    <line x1="260" y1="175" x2="220" y2="205" stroke="#9ca3af" stroke-width="2" stroke-dasharray="5,5"/>
+    
+    <!-- Leyenda -->
+    <rect x="20" y="250" width="15" height="15" fill="#10b981"/>
+    <text x="40" y="262" font-size="12">Visitado</text>
+    
+    <rect x="100" y="250" width="15" height="15" fill="#f59e0b"/>
+    <text x="120" y="262" font-size="12">Actual</text>
+    
+    <rect x="180" y="250" width="15" height="15" fill="#3b82f6"/>
+    <text x="200" y="262" font-size="12">En cola</text>
+    
+    <rect x="260" y="250" width="15" height="15" fill="#9ca3af"/>
+    <text x="280" y="262" font-size="12">No visitado</text>
+</svg>

@@ -1,0 +1,42 @@
+<svg width="500" height="300" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .box { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 1; }
+        .header { fill: #2563eb; stroke: #1e40af; }
+        .text { font-family: Arial, sans-serif; font-size: 14px; }
+        .header-text { fill: white; font-weight: bold; }
+    </style>
+    
+    <!-- Título -->
+    <text x="250" y="30" text-anchor="middle" class="text" font-weight="bold">Lista de Adyacencia</text>
+    
+    <!-- Estructura de lista -->
+    <rect x="50" y="50" width="100" height="30" class="header"/>
+    <rect x="150" y="50" width="250" height="30" class="box"/>
+    <text x="100" y="70" text-anchor="middle" class="header-text">A</text>
+    <text x="275" y="70" text-anchor="middle" class="text">→ B → C</text>
+    
+    <rect x="50" y="80" width="100" height="30" class="header"/>
+    <rect x="150" y="80" width="250" height="30" class="box"/>
+    <text x="100" y="100" text-anchor="middle" class="header-text">B</text>
+    <text x="275" y="100" text-anchor="middle" class="text">→ A → D → E</text>
+    
+    <rect x="50" y="110" width="100" height="30" class="header"/>
+    <rect x="150" y="110" width="250" height="30" class="box"/>
+    <text x="100" y="130" text-anchor="middle" class="header-text">C</text>
+    <text x="275" y="130" text-anchor="middle" class="text">→ A → F</text>
+    
+    <rect x="50" y="140" width="100" height="30" class="header"/>
+    <rect x="150" y="140" width="250" height="30" class="box"/>
+    <text x="100" y="160" text-anchor="middle" class="header-text">D</text>
+    <text x="275" y="160" text-anchor="middle" class="text">→ B</text>
+    
+    <rect x="50" y="170" width="100" height="30" class="header"/>
+    <rect x="150" y="170" width="250" height="30" class="box"/>
+    <text x="100" y="190" text-anchor="middle" class="header-text">E</text>
+    <text x="275" y="190" text-anchor="middle" class="text">→ B → F</text>
+    
+    <rect x="50" y="200" width="100" height="30" class="header"/>
+    <rect x="150" y="200" width="250" height="30" class="box"/>
+    <text x="100" y="220" text-anchor="middle" class="header-text">F</text>
+    <text x="275" y="220" text-anchor="middle" class="text">→ C → E</text>
+</svg>

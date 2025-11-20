@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Técnico - Estructura de Datos: Grafos</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/animations.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="assets/images/logo_inca.png" alt="Logo">
+            </div>
+            <div class="nav-search">
+                <input type="text" id="searchInput" placeholder="Buscar artículos...">
+                <button id="searchBtn">🔍</button>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Inicio</a>
+                <a href="#posts" class="nav-link">Artículos</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section Mejorada -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Explorando la Estructura de Datos: Grafos</h2>
+                <p class="hero-subtitle">Descubre los fundamentos, representaciones y algoritmos de una de las
+                    estructuras más versátiles en Ciencias de la Computación</p>
+
+                <!-- Nueva Descripción Breve de Grafos -->
+                <div class="graph-description">
+                    <div class="description-card">
+                        <h3>¿Qué es un Grafo?</h3>
+                        <p>Un <strong>grafo</strong> es una estructura de datos no lineal compuesta por:</p>
+                        <div class="graph-elements">
+                            <div class="element">
+                                <span class="element-icon">●</span>
+                                <div>
+                                    <strong>Vértices (Nodos)</strong>
+                                    <p>Unidades fundamentales que representan entidades</p>
+                                </div>
+                            </div>
+                            <div class="element">
+                                <span class="element-icon">─</span>
+                                <div>
+                                    <strong>Aristas (Enlaces)</strong>
+                                    <p>Conexiones que representan relaciones entre vértices</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="description-card">
+                        <h3>Aplicaciones en la Vida Real</h3>
+                        <div class="applications-grid">
+                            <div class="application">
+                                <span class="app-icon">🌐</span>
+                                <span>Redes Sociales</span>
+                            </div>
+                            <div class="application">
+                                <span class="app-icon">🗺️</span>
+                                <span>Sistemas de Navegación</span>
+                            </div>
+                            <div class="application">
+                                <span class="app-icon">🔗</span>
+                                <span>Internet y Redes</span>
+                            </div>
+                            <div class="application">
+                                <span class="app-icon">🤖</span>
+                                <span>Inteligencia Artificial</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- El resto del contenido se mantiene igual -->
+        <section id="posts" class="posts-section">
+            <div class="section-header">
+                <h2>Artículos Técnicos</h2>
+                <div class="search-results-info" id="resultsInfo"></div>
+            </div>
+
+            <div class="posts-grid" id="postsGrid">
+                <!-- Los posts se cargan dinámicamente aquí -->
+            </div>
+        </section>
+
+        <section id="postDetail" class="post-detail" style="display: none;">
+            <button id="backBtn" class="back-button">← Volver a artículos</button>
+            <article class="post-full" id="postFull">
+                <!-- Contenido completo del post se carga aquí -->
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Cristian David Medina Hernández - Código: 90108</p>
+        <p>Estructuras de Datos II - Profesor: Josthin Duvan Sarmiento Samper</p>
+        <p>&copy; 2025 Blog Técnico de Grafos - Universidad INCCA de Colombia</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/blogEngine.js"></script>
+    <script src="scripts/search.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
